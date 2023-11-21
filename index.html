@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zomato</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="container-fluid bck-img">
+        <div class="hstack gap-3" style="padding: 12px;">
+            <div class="p-2 ms-auto">
+                <a class="login" href="#">Login</a>    
+            </div>
+            <div class="p-2 " >
+                <a class="create" href="#">Create an account</a>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p class="logo px-4 py-2">e!</p>
+            </div>
+        </div>
+        <div class="row text-center">
+            <div class="col-md-12">
+                <p class="header">Find the best restaurants, cafés, and bars</p>
+            </div>
+        </div>
+        <div class="datalist">
+            <input class="form-control Location" list="datalistOptions" id="exampleDataList" placeholder="Please type a location">
+            <datalist id="datalistOptions">
+                <option value="Sarjapur Road, Bengaluru">Sarjapur Road, Bengaluru</option>
+                <option value="HSR Layout, Bengaluru">HSR Layout, Bengaluru</option>
+                <option value="Kormangala, Bengaluru">Kormangala, Bengaluru</option>
+                <option value="Jay Nagar, Bengaluru">Jay Nagar, Bengaluru</option>
+            </datalist>
+            
+            <div>
+                <i class="fa-solid fa-magnifying-glass glass"></i>
+                <input class="form-control Restaurant" list="datalistOptions2" id="exampleDataList2" placeholder="Search for restaurants">
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid main">
+        <div class="heading">
+            <h2>Quick Searches</h2>
+            <p>Discover restaurants by type of meal</p>
+        </div>
+        <div class="cards">
+            <!--Breakfast-->
+            <div class="card mb-3" style="width: 360px; height: 160px; border-radius: 0px; box-shadow: 0px 3px 6px #00000029;">
+                <div class="row g-0">
+                  <div class="col">
+                    <img src="images/Breakfast.png" alt="Breakfast" style="height: 160px; width: 160px;">
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font: normal normal 600 18px/27px Poppins; color: #192F60;">Breakfast</h5>
+                      <p class="card-text"  style="font: normal normal normal 14px/21px Poppins; color: #8C96AB;">Start your day with exclusive breakfast options</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!--Lunch-->
+            <div class="card mb-3" style="width: 360px; height: 160px; border-radius: 0px; box-shadow: 0px 3px 6px #00000029;">
+                <div class="row g-0">
+                  <div class="col">
+                    <img src="images/Lunch.png" alt="Lunch" style="height: 160px; width: 160px;">
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font: normal normal 600 18px/27px Poppins; color: #192F60;">Lunch</h5>
+                      <p class="card-text"  style="font: normal normal normal 14px/21px Poppins; color: #8C96AB;">Start your day with exclusive breakfast options</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!--Snacks-->
+            <div class="card mb-3" style="width: 360px; height: 160px; border-radius: 0px; box-shadow: 0px 3px 6px #00000029;">
+                <div class="row g-0">
+                  <div class="col">
+                    <img src="images/Snack.png" alt="Snacks" style="height: 160px; width: 160px;">
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font: normal normal 600 18px/27px Poppins; color: #192F60;">Snacks</h5>
+                      <p class="card-text"  style="font: normal normal normal 14px/21px Poppins; color: #8C96AB;">Start your day with exclusive breakfast options</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!--Dinner-->
+            <div class="card mb-3" style="width: 360px; height: 160px; border-radius: 0px; box-shadow: 0px 3px 6px #00000029;">
+                <div class="row g-0">
+                  <div class="col">
+                    <img src="images/Dinner.png" alt="Dinner" style="height: 160px; width: 160px;">
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font: normal normal 600 18px/27px Poppins; color: #192F60;">Dinner</h5>
+                      <p class="card-text"  style="font: normal normal normal 14px/21px Poppins; color: #8C96AB;">Start your day with exclusive breakfast options</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!--Drinks-->
+            <div class="card mb-3" style="width: 360px; height: 160px; border-radius: 0px; box-shadow: 0px 3px 6px #00000029;">
+                <div class="row g-0">
+                  <div class="col">
+                    <img src="images/Drinks.png" alt="Drinks" style="height: 160px; width: 160px;">
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font: normal normal 600 18px/27px Poppins; color: #192F60;">Drinks</h5>
+                      <p class="card-text"  style="font: normal normal normal 14px/21px Poppins; color: #8C96AB;">Start your day with exclusive breakfast options</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <!--Nightlife-->
+            <div class="card mb-3" style="width: 360px; height: 160px; border-radius: 0px; box-shadow: 0px 3px 6px #00000029;">
+                <div class="row g-0">
+                  <div class="col">
+                    <img src="images/Nightlife.png" alt="Nightlife" style="height: 160px; width: 160px;">
+                  </div>
+                  <div class="col">
+                    <div class="card-body">
+                      <h5 class="card-title" style="font: normal normal 600 18px/27px Poppins; color: #192F60;">Nightlife</h5>
+                      <p class="card-text"  style="font: normal normal normal 14px/21px Poppins; color: #8C96AB;">Start your day with exclusive breakfast options</p>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
